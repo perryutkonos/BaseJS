@@ -21,24 +21,6 @@ const arrowFunctionReturn = (a,b) => {
 
 
 
-
-const someFunction = prop1 => (event = false) => fetch(prop1);
-
-window.addEventListener('click', someFunction('http://test.com'));
-
-someFunction('http://test.com')();
-
-
-
-
-
-
-
-
-
-
-
-
 const someFunctionClassic = function (prop1) {
 
   return function () {
@@ -46,3 +28,35 @@ const someFunctionClassic = function (prop1) {
     return fetch(prop1)
   }
 };
+
+window.addEventListener('click', someFunction('http://test.com'));
+
+someFunctionClassic('http://test.com')();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const someFunction = prop1 => (event = false) => fetch(prop1);
+
+
+
+
+
+
+
+
+
